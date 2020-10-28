@@ -1,0 +1,17 @@
+function solution(numbers) {
+    const answer = [];
+    let i,j;
+    let sum;
+    for(i=0;i<numbers.length;i++){
+        for(j=i+1;j<numbers.length;j++){
+        sum = numbers[i]+numbers[j];
+            if(answer.indexOf(sum) === -1){
+                answer.push(sum);
+            }
+        }
+    }
+    answer.sort(function(a,b){
+                return a-b;
+                })
+    return answer;
+}
