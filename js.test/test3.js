@@ -2,8 +2,7 @@
 
 function solution(n) {
     let answer = '';
-    let i;
-    for (i=0; i<n; i++){
+    for (let i=0; i<n; i++){
         answer += i % 2 == 0 ? '수' : '박' ;
         // ? > i를 n으로 나누어서 0이냐 ?
         // : > 맞으면 앞에꺼를 넣고 틀리면 뒤에거를 넣고
