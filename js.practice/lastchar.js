@@ -1,8 +1,9 @@
 let start = '자바스크립트'
 while(true){
     let end = prompt(start)
-    if(start.length < 4){
+    if(start.length > 4){
         alert('다시입력해주세요')
+        break;
     }
     if(start[start.length -1] === end[0]){
         alert('딩동댕')
