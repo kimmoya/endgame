@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./grid.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script>
+        const buttons = document.querySelectorAll('button')
+        const result = document.querySelector('input')
+            function action(s) {
+            buttons.forEach(c => {
+                
+            })
+            result.value='';
+            console.log(s);
+        }
+    </script> -->
+</head>
+<body>
+<section class = "calculator">
+    <div class = "container">
+    <div class="row">
+        <div class="col-12">
+            <div class = "calculator-main">
+                <h2 class = "calculator-name">계산기</h2>
+                <input type="text" class = "result" value="" disabled>
+                <div class = "button-set">
+                <button type = "button" onclick="action('1')" class ="num">1</button>
+                <button type = "button" onclick="action('2')" class = "num">2</button>
+                <button type = "button" onclick="action('3')" class = "num">3</button>
+                <button type = "button" onclick="action('+')" class = "nom">+</button> <br/> 
+                <button type = "button" onclick="action('4')" class = "num">4</button>
+                <button type = "button" onclick="action('5')" class = "num">5</button>
+                <button type = "button" onclick="action('6')" class = "num">6</button>
+                <button type = "button" onclick="action('-')" class = "nom" >-</button> <br/>
+                <button type = "button" onclick="action('7')" class ="num">7</button>
+                <button type = "button" onclick="action('8')" class ="num">8</button>
+                <button type = "button" onclick="action('9')" class ="num">9</button>
+                <button type = "button" onclick="action('*')" class = "nom" >*</button> <br/>
+                <button type = "button" onclick="action('C')">C</button>
+                <button type = "button" onclick="action('0')" class = "zero">0</button>
+                <button type = "button" onclick="action('=')" class = equls>=</button>
+                <button type = "button" onclick="action('/')" class = "nom">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<script src="./index.js"></script>
+</body>
+</html>

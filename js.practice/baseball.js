@@ -20,11 +20,13 @@ while (count <= 10) {
   strike = 0;
   ball = 0;
   count++;
+  loop1:
   for (let j = 0; j < 4; j++) {
+    loop2:
     for (let k = 0; k < 4; k++) {
         if (j !== k && inputArray[j] == inputArray[k]) {
-            console.error('중복되는 숫자가 있습니다.'); //반복문과 논리연산자를 통한 중복숫자 알림 기능 추가
-            break;
+            alert('중복되는숫자입니다. 기회를한번날리셨습니다')
+            break loop1;
             }
       if (number[j] == inputArray[k]) {
         if (j === k) {
@@ -39,10 +41,13 @@ while (count <= 10) {
   if (strike === 4) {
     console.log('홈런!!! ' + (count - 1) + '번 만에 맞추셨습니다');
     break;
-  } else if (count > 10) {
+  }
+    else if (count > 10) {
     console.error('시도 횟수를 초과하셨습니다. 정답은' + number.join('') + '입니다.');
 
   } else {
     console.info(inputArray.join('') + ': ' + strike + '스트라이크 ' + ball + '볼 ' + (count - 1) + '번째 시도입니다');
   }
 }
+
+//카운트를 다쓴거로 처리하는방법
