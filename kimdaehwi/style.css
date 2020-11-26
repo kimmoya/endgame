@@ -39,7 +39,7 @@ input {
     width: 270px;
     height: 50px;
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     background-color: #fff;
     border: 2px solid black;
     border-radius: 10px;
@@ -65,7 +65,7 @@ button:active {
 
 .calculator {
     max-width: 320px;
-    padding : 40px 0 40px;
+    padding : 40px 0;
     width : 100%;
     background-color: gainsboro;
     text-align: center;
@@ -79,7 +79,7 @@ button:active {
 
 .calculator-name {
     font-size: 38px;
-    margin-bottom : 40px;
+    margin-bottom : 30px;
 }
 
 .nom {
@@ -89,4 +89,15 @@ button:active {
 
 .result {
     text-align: right;
+}
+
+.cl,
+.back {
+    border-radius: 10px;
+    width : 125px;
+    height: 45px;
+}
+
+.cl {
+    margin-right: 10px;
 }

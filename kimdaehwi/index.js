@@ -1,15 +1,20 @@
 const buttons = document.querySelectorAll('.button-set button')
 const result = document.querySelector('input')
+const back = document.querySelector('.button-set .back')
 // const num = document.querySelectorAll('.button-set .num')
 // const zero = document.querySelectorAll('.button-set .zero')
 // const equls = document.querySelectorAll('.button-set .equls')
 
 
-    function action(s){
-        const result = document.querySelector('input')
-        result.value = result.value + s;
-        console.log(s)
+    function action(num){
+        // const result = document.querySelector('input')
+        result.value = result.value + num;
+        console.log(num)
     }
+    function allclear() {
+        result.value = '';
+    }
+    
 
 // function action(a, b, c, d){
 //     if(buttons){
